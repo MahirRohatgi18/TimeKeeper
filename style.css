@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+body{
+	font-family: "Audiowide", sans-serif;
+	background-color: red;
+	margin: 0;
+}
+
+/* svg circle styling */
+.timer-container {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .timer-circle {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform: rotate(-90deg) scaleY(-1); /* Flip vertically */
+  }
+  
+  .timer-circle circle {
+	stroke: #ccc;
+  stroke-width: 4;
+  stroke-dasharray: 301.6;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+  }
+  
+  .timer-circle circle.progress {
+	stroke: white;
+  }
+
+  #countdown {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-1deg);
+	
+	font-weight: bold;
+	display: inline-flex;
+	align-items: center;
+	justify-content: safe center;
+	font-size: 24px;
+	margin: 0;
+	height: 80px;
+	width : 350px;
+  }
+
+
+#start {
+	width: 90px;
+	height: 30px;
+	cursor: pointer;
+	background: transparent;
+	
+	outline: none;
+	transition: 1s ease-in-out;
+  }
+  svg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	fill: none;
+	stroke: #e1b9b9;
+	stroke-dasharray: 150 480;
+	stroke-dashoffset: 150;
+	transition: 1s ease-in-out;
+  }
+  
+#start:hover {
+	transition: 0.5s ease-in-out;
+	background: #ffae00;
+  }
+
+  #start:hover svg {
+	stroke-dashoffset: -480;
+  }
+
+
+  #start span {
+	color: white;
+	font-size: 18px;
+	font-weight: 100;
+  }
+  
+
+
+  
+#pause {
+	width: 90px;
+	height: 30px;
+	cursor: pointer;
+	background: transparent;
+	
+	outline: none;
+	transition: 1s ease-in-out;
+  }
+  svg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	fill: none;
+	stroke: #e1b9b9;
+	stroke-dasharray: 150 480;
+	stroke-dashoffset: 150;
+	transition: 1s ease-in-out;
+  }
+  
+#pause:hover {
+	transition: 0.5s ease-in-out;
+	background: #ffae00;
+  }
+
+  #pause:hover svg {
+	stroke-dashoffset: -480;
+  }
+
+
+  #pause span {
+	color: white;
+	font-size: 18px;
+	font-weight: 100;
+  }
+
+
+  
+#reset {
+	width: 90px;
+	height: 30px;
+	cursor: pointer;
+	background: transparent;
+	
+	outline: none;
+	transition: 1s ease-in-out;
+  }
+  svg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	fill: none;
+	stroke: #e1b9b9;
+	stroke-dasharray: 150 480;
+	stroke-dashoffset: 150;
+	transition: 1s ease-in-out;
+  }
+  
+#reset:hover {
+	transition: 0.5s ease-in-out;
+	background: #ffae00;
+  }
+
+  #reset:hover svg {
+	stroke-dashoffset: -480;
+  }
+
+
+  #reset span {
+	color: white;
+	font-size: 18px;
+	font-weight: 100;
+  }
+  
+  
+  
